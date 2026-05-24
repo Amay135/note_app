@@ -1,5 +1,7 @@
 {
     "require": {
-        "mongodb/mongodb": "^2.2"
+        "mongodb/mongodb": "^2.2",
+        "google/apiclient": "*",
+        "firebase/php-jwt": "^7.0"
     }
 }

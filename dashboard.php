@@ -62,6 +62,7 @@ $kategori_list = $koleksi_notes->distinct('kategori', ['user_id' => $user_id]);
 </head>
 
 <body>
+        <div id="vanta-bg"></div>
     <div class="app-container">
         <!-- Navbar -->
         <nav class="navbar">
@@ -119,6 +120,33 @@ $kategori_list = $koleksi_notes->distinct('kategori', ['user_id' => $user_id]);
             <?php endif; ?>
         </div>
     </div>
+
+<script src="https://unpkg.com/three@0.121.1/build/three.min.js"></script>
+<script src="https://unpkg.com/vanta/dist/vanta.birds.min.js"></script>
+
+<script>
+window.addEventListener("load", function(){
+
+    VANTA.BIRDS({
+        el:"#vanta-bg",
+
+        mouseControls:true,
+        touchControls:true,
+        gyroControls:false,
+
+        backgroundColor:0x050816,
+        color1:0x00e5d0,
+        color2:0x0088ff,
+
+        quantity:3,
+        birdSize:1,
+        wingSpan:20,
+        speedLimit:2
+    });
+
+});
+</script>
+
 </body>
 
 </html>

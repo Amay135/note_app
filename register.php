@@ -35,6 +35,7 @@ if (isset($_POST['daftar'])) {
         $pesan_type = "success";
     }
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="id">

@@ -3,18 +3,19 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 // Kunci koneksi ke MongoDB Atlas (cluster)
-$kunci_gudang = "mongodb+srv://regari:kalitengah@cluster0.wcurq0d.mongodb.net/?appName=Cluster0";
+$kunci_gudang = "mongodb+srv://amarmaruf:amarmaruf135@new.5cbkswv.mongodb.net/?appName=new";
 
 try {
-    // Buka koneksi ke MongoDB
-    $client = new MongoDB\Client($kunci_gudang);
+    // 🔥 GANTI NAMA VARIABLE (INI KUNCI FIX)
+    $mongo_client = new MongoDB\Client($kunci_gudang);
 
-    // Pilih database: notes_app
-    $database = $client->notes_app;
+    // Pilih database
+    $database = $mongo_client->notes_app;
 
-    // Pilih collection (tabel)
-    $koleksi_users = $database->users;   // Collection untuk data user
-    $koleksi_notes = $database->notes;   // Collection untuk data catatan
+    // Collection
+    $koleksi_users = $database->users;
+    $koleksi_notes = $database->notes;
+
 } catch (Exception $e) {
     die("Gagal konek ke database: " . $e->getMessage());
 }
