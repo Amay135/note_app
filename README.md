@@ -1,6 +1,6 @@
-# Note_app (CihuyNotes)
+# Note_app (Cihuy Notes)
 
-CihuyNotes adalah aplikasi pencatatan (*notes app*) berbasis web sederhana yang dibuat menggunakan bahasa pemrograman **PHP** dan database **MongoDB Atlas**. Proyek ini dibuat sebagai bahan belajar pemrograman web dan pengelolaan database NoSQL untuk tugas kuliah.
+Cihuy Notes adalah aplikasi pencatatan notes app berbasis web sederhana yang dibuat menggunakan bahasa pemrograman PHP dan database *ongoDB Atlas. Proyek ini dibuat sebagai bahan belajar Basis Data Non Relasional.
 
 ## Fitur Utama
 - **Autentikasi Pengguna:** Log in & Register manual, serta dukung Log in cepat dengan **Google Sign-In**.
@@ -10,10 +10,10 @@ CihuyNotes adalah aplikasi pencatatan (*notes app*) berbasis web sederhana yang 
 - **Tampilan Modern:** Desain responsif (*dark mode*) dengan efek animasi latar belakang dari Vanta.js.
 
 ## Teknologi yang Digunakan
-- **Bahasa Utama:** PHP (versi 7.4 ke atas direkomendasikan)
+- **Bahasa Utama:** PHP (versi 7.4)
 - **Database:** MongoDB Atlas (Cloud NoSQL)
 - **Desain UI:** HTML5, CSS3 (Custom Glassmorphism), dan Bootstrap Icons
-- **Library Tambahan:** Google API Client (untuk fitur Login Google), Vanta.js & Three.js (untuk animasi background)
+- **Library Tambahan:** Google API Client (untuk fitur Login Google), Vanta.js(untuk animasi background)
 
 ## Cara Menjalankan di Lokal (Komputer Sendiri)
 
